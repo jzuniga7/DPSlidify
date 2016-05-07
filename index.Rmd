@@ -15,7 +15,7 @@ knit        : slidify::knit2slides
 ## Height Predictor
 
 This data product allows you to predict your height using
-the height of your parents and your gender.
+the height of your parents and your gender using the following formula.
 
 $$\frac{dadheight + momheight \pm 5}{2}$$
 
