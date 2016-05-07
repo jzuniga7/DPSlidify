@@ -11,30 +11,51 @@ mode        : selfcontained # {standalone, draft}
 knit        : slidify::knit2slides
 ---
 
-## Read-And-Delete
 
-1. Edit YAML front matter
-2. Write using R Markdown
-3. Use an empty line followed by three dashes to separate slides!
+## Height Predictor
 
---- .class #id 
+This data product allows you to predict your height using
+the height of your parents and your gender.
 
-## Slide 2
-
-Describe quickly what is involved
+$$\frac{dadheight + momheight \pm 5}{2}$$
 
 --- .class #id 
 
-## Slide 3
+## Using the Galton data set
 
-R code, show the correlation
+A good way to check if the model is useful is to use the Galton data set. This data set has 928 observations that on two variables:
+
+1. Mid parent height in inches
+2. Chiled height in inches
+
+We'll use the data set to produce a plot using the following R code:
+
+```{r, echo=TRUE, results='hide', fig.show='hide'}
+library(HistData)
+plot(Galton$parent, Galton$child, xlab="Parents height", ylab="Child height", bg="lightgreen")
+fit <- lm(Galton$child ~ Galton$parent)
+abline(fit, lwd = 2	)
+```
 
 --- .class #id 
 
-## Slide 4
+## Galton data set
 
-Genetic proof, ending
+This can be shown in the following plot which charts parent's height vs children's height using the Galton data set.
+
+```{r, echo=FALSE}
+library(HistData)
+plot(Galton$parent, Galton$child, xlab="Parents height", ylab="Child height", bg="lightgreen")
+fit <- lm(Galton$child ~ Galton$parent)
+abline(fit, lwd = 2	)
+```
 
 --- .class #id 
 
+## Genetic Proof
 
+The Galton data set shows that using the parent's height is a good predictor of a person's future height.
+
+Use the height predictor product now!
+
+--- .class #id 
