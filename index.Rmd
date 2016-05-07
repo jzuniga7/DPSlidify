@@ -1,0 +1,40 @@
+---
+title       : Height Data Product
+subtitle    : Final assignment for Data Products Class
+author      : Jay Zuniga
+job         : DP Student
+framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : [mathjax]            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## Read-And-Delete
+
+1. Edit YAML front matter
+2. Write using R Markdown
+3. Use an empty line followed by three dashes to separate slides!
+
+--- .class #id 
+
+## Slide 2
+
+Describe quickly what is involved
+
+--- .class #id 
+
+## Slide 3
+
+R code, show the correlation
+
+--- .class #id 
+
+## Slide 4
+
+Genetic proof, ending
+
+--- .class #id 
+
+
